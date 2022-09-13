@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrementador</title>
+
+    <style>
+        input{
+            width: 200px;
+            margin: 1px;
+            
+            
+        }
+
+        body{
+           text-align: center;
+            
+            
+        }
+
+        th#txt1{
+            margin: 200px;
+            width: 100px;
+            text-align: left;
+        }
+        
+
+        th, td {
+           
+            text-align: center;
+            margin: 200px;
+            width: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!--<div id="txt1"></div>
+    <input type="button" value="Incrementar" onclick="incrementar()"> -->
+
+    <table>
+
+    <tr><th id="txt1">1</th>
+        <td><button onclick="incrementar();">Incrementar</button></td></tr>
+    
+    </table>
+
+    <script> 
+        var tn1 = window.document.getElementById('txt1')
+        var n1 = 1
+        tn1.innerHTML = '1'
+        
+
+        function incrementar(){
+            
+            var res = ++n1            
+            tn1.innerHTML = `${res}`
+            
+        }
+
+        
+    </script>
+</body>
+</html>
